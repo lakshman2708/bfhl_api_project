@@ -1,5 +1,3 @@
-from dotenv import load_dotenv
-load_dotenv()
 import os
 import re
 from flask import Flask, request, jsonify
@@ -100,6 +98,3 @@ def bfhl():
 
     except Exception as e:
         return jsonify({"is_success": False, "error": "Server error", "details": str(e)}), 500
-
-if __name__ == "__main__":
-    app.run()
