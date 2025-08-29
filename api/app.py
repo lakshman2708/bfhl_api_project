@@ -4,10 +4,10 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-FULL_NAME = os.getenv("FULL_NAME", "john_doe")
-DOB_DDMMYYYY = os.getenv("DOB", "17091999")
-EMAIL = os.getenv("EMAIL", "john@xyz.com")
-ROLL_NUMBER = os.getenv("ROLL_NUMBER", "ABCD123")
+FULL_NAME = os.getenv("FULL_NAME", "lakshman_shrinath")
+DOB_DDMMYYYY = os.getenv("DOB", "27082004")
+EMAIL = os.getenv("EMAIL", "lakshmanshrinath.s@vitstudent.ac.in")
+ROLL_NUMBER = os.getenv("ROLL_NUMBER", "22BRS1069")
 
 number_re = re.compile(r"^-?\d+$")
 
